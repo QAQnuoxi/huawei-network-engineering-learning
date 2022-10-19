@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "8c1990a8330bbfa8",
+        "id": "dd6533b63c7d649d",
         "type": "tabs",
         "children": [
           {
-            "id": "99e0d656d7b18263",
+            "id": "ae0f6ae13fde9748",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "网络工程/HCIA-Datacom V1.0/HCIA-Datacom V1.0 考试大纲.pdf"
+                "file": "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络工程/HCIA-Datacom V1.0/HCIA-Datacom V1.0 考试大纲.pdf",
+                "file": "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络工程/HCIA-Datacom V1.0/HCIA-Datacom V1.0 考试大纲.pdf",
+                "file": "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络工程/HCIA-Datacom V1.0/HCIA-Datacom V1.0 考试大纲.pdf"
+                "file": "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md"
               }
             }
           }
@@ -137,17 +139,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "99e0d656d7b18263",
+  "active": "ae0f6ae13fde9748",
   "lastOpenFiles": [
+    "网络工程/1.华为IA笔记/数据链路层.md",
+    "网络工程/1.华为IA笔记/网络三要素.md",
+    "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md",
+    "网络工程/1.华为IA笔记/images/Pasted image 20221019143923.png",
+    "网络工程/1.华为IA笔记/OSI与TCPIP.md",
+    "清单/近期补充学习清单.md",
+    "清单/images/uTools_1665285965061.png",
     "网络工程/2.eNSP使用/wireshark设置中文.md",
-    "网络工程/1.视频笔记/数据链路层.md",
-    "网络工程/2.eNSP使用/images/7a544a715430ed106733ffa0b98c4a23.jpg",
-    "网络工程/2.eNSP使用/images/8b5397032dc7477ae364ca81b0b75ac8.jpg",
-    "网络工程/2.eNSP使用/images/7a544a715430ed106733ffa0b98c4a23 1.jpg",
-    "网络工程/工具包/eNSP/eNSP V100R003C00 软件安装指南.pdf",
-    "网络工程/工具包/eNSP/Wireshark/App/Wireshark/欢迎关注公众号：U9软件宝库.png",
-    "网络工程/2.eNSP/wireshark设置中文.md",
-    "1.jpg",
-    "网络工程/网络工程概述(行业介绍).md"
+    "网络工程/1.华为IA笔记/VLSM.md",
+    "网络工程/2.eNSP使用/images/7a544a715430ed106733ffa0b98c4a23.jpg"
   ]
 }
