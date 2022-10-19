@@ -3,5 +3,7 @@
   "attachmentFolderPath": "./images",
   "trashOption": "local",
   "tabSize": 4,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "strictLineBreaks": true,
+  "newFileLocation": "current"
 }

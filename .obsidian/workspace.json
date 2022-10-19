@@ -4,22 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "dd6533b63c7d649d",
+        "id": "fb8ec44f17c724ed",
         "type": "tabs",
         "children": [
           {
-            "id": "ae0f6ae13fde9748",
+            "id": "a8c8d561b0cb7bb2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md",
                 "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a51c0d7249cc6475",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络工程/3.硬件指南/Switch    (交换机).md",
+                "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md",
+                "file": "网络工程/3.硬件指南/Switch    (交换机).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md",
+                "file": "网络工程/3.硬件指南/Switch    (交换机).md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,31 +140,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md"
+                "file": "网络工程/3.硬件指南/Switch    (交换机).md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 331.5
+    "width": 200,
+    "collapsed": true
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "ae0f6ae13fde9748",
+  "active": "a51c0d7249cc6475",
   "lastOpenFiles": [
-    "网络工程/1.华为IA笔记/数据链路层.md",
-    "网络工程/1.华为IA笔记/网络三要素.md",
     "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md",
     "网络工程/1.华为IA笔记/images/Pasted image 20221019143923.png",
+    "网络工程/3.硬件指南/Switch    (交换机).md",
+    "网络工程/3.硬件指南/Router （路由）.md",
+    "网络工程/1.华为IA笔记/数据链路层.md",
+    "网络工程/1.华为IA笔记/网络三要素.md",
     "网络工程/1.华为IA笔记/OSI与TCPIP.md",
     "清单/近期补充学习清单.md",
     "清单/images/uTools_1665285965061.png",
-    "网络工程/2.eNSP使用/wireshark设置中文.md",
-    "网络工程/1.华为IA笔记/VLSM.md",
-    "网络工程/2.eNSP使用/images/7a544a715430ed106733ffa0b98c4a23.jpg"
+    "网络工程/2.eNSP使用/wireshark设置中文.md"
   ]
 }
