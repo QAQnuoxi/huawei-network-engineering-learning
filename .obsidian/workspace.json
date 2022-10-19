@@ -1,0 +1,153 @@
+{
+  "main": {
+    "id": "fa0a64d37603fd70",
+    "type": "split",
+    "children": [
+      {
+        "id": "8c1990a8330bbfa8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99e0d656d7b18263",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "网络工程/HCIA-Datacom V1.0/HCIA-Datacom V1.0 考试大纲.pdf"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8092f729ddebd684",
+    "type": "split",
+    "children": [
+      {
+        "id": "70c7a8d90682e8e4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9943e3c068c03d8f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "754e83464d1bdc75",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "743ab411d9fc2ee2",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c118c8e5d4a9f346",
+    "type": "split",
+    "children": [
+      {
+        "id": "978728eb21874981",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "709526d7aecdb8f7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "网络工程/HCIA-Datacom V1.0/HCIA-Datacom V1.0 考试大纲.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "55c5cb2acaadc369",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "网络工程/HCIA-Datacom V1.0/HCIA-Datacom V1.0 考试大纲.pdf",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7946db2dfff94282",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a44681a6b4e4874e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "网络工程/HCIA-Datacom V1.0/HCIA-Datacom V1.0 考试大纲.pdf"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 331.5
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "99e0d656d7b18263",
+  "lastOpenFiles": [
+    "网络工程/2.eNSP使用/wireshark设置中文.md",
+    "网络工程/1.视频笔记/数据链路层.md",
+    "网络工程/2.eNSP使用/images/7a544a715430ed106733ffa0b98c4a23.jpg",
+    "网络工程/2.eNSP使用/images/8b5397032dc7477ae364ca81b0b75ac8.jpg",
+    "网络工程/2.eNSP使用/images/7a544a715430ed106733ffa0b98c4a23 1.jpg",
+    "网络工程/工具包/eNSP/eNSP V100R003C00 软件安装指南.pdf",
+    "网络工程/工具包/eNSP/Wireshark/App/Wireshark/欢迎关注公众号：U9软件宝库.png",
+    "网络工程/2.eNSP/wireshark设置中文.md",
+    "1.jpg",
+    "网络工程/网络工程概述(行业介绍).md"
+  ]
+}
