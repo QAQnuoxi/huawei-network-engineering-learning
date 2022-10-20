@@ -8,46 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4beca4b6edbf8aff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "网络工程/5.数据通信/数据通信过程.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "78a885ae9b3e0799",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络工程/1.华为HCIA笔记/3. 华为VRP.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f62a24a28b406d4c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "网络工程/1.华为HCIA笔记/1.网络工程概述(行业介绍).md",
+                "file": "网络工程/2.eNSP使用/VRP命令行.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络工程/1.华为HCIA笔记/3. 华为VRP.md",
+                "file": "网络工程/2.eNSP使用/VRP命令行.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络工程/1.华为HCIA笔记/3. 华为VRP.md",
+                "file": "网络工程/2.eNSP使用/VRP命令行.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络工程/1.华为HCIA笔记/3. 华为VRP.md"
+                "file": "网络工程/2.eNSP使用/VRP命令行.md"
               }
             }
           }
@@ -169,15 +142,15 @@
   },
   "active": "78a885ae9b3e0799",
   "lastOpenFiles": [
+    "网络工程/1.华为HCIA笔记/3. 华为VRP概述.md",
+    "网络工程/2.eNSP使用/VRP命令行.md",
+    "网络工程/5.数据通信/数据通信过程.md",
+    "网络工程/1.华为HCIA笔记/2.OSI与TCPIP.md",
+    "网络工程/1.华为HCIA笔记/1.网络工程概述(行业介绍).md",
+    "网络工程/6. 网络类型/城域网.md",
     "网络工程/1.华为HCIA笔记/网络三要素.md",
     "网络工程/1.华为HCIA笔记/VLSM.md",
-    "网络工程/1.华为HCIA笔记/3. 华为VRP.md",
-    "网络工程/5.数据通信/数据通信过程.md",
-    "网络工程/1.华为HCIA笔记/1.网络工程概述(行业介绍).md",
-    "网络工程/1.华为HCIA笔记/2.OSI与TCPIP.md",
-    "网络工程/6. 网络类型/城域网.md",
     "网络工程/6. 网络类型/局域网.md",
-    "网络工程/6. 网络类型/广域网.md",
-    "网络工程/3.硬件指南/线缆.md"
+    "网络工程/6. 网络类型/广域网.md"
   ]
 }

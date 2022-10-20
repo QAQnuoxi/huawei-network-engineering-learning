@@ -4,6 +4,11 @@
       "type": "file",
       "title": "1.网络工程概述(行业介绍)",
       "path": "网络工程/1.华为HCIA笔记/1.网络工程概述(行业介绍).md"
+    },
+    {
+      "type": "file",
+      "title": "VRP命令行",
+      "path": "网络工程/2.eNSP使用/VRP命令行.md"
     }
   ]
 }
