@@ -1,4 +1,9 @@
 # 基础
+- [[#3.1 常用功能]]
+- [[#3.2 常见文件系统操作命令]]
+- [[#3.3 基本配置命令]]
+- [[#3.4 使用案例]]
+- 
 
 
 ## 1.基本命令结构
@@ -179,8 +184,20 @@ Error: Wrong parameter found at '^' position.
 
 ### 3.2 常见文件系统操作命令
 
-
-
+|             |              |
+|-------|-----------|
+|查看当前目录|``<Huangwei>pwd``|
+|显示当前目录下的文件信息|``<Huawei>dir``|
+|查看文本文件的具体内容|``<Huawei>more``|
+|修改用户当前界面的工作目录|``<Huawei>cd``|
+|创建新的目录|``<Huawei>mkdir``|
+|删除目录|``<Huawei>rmdir``|
+|复制文件|``<Huawei>copy``|
+|移动文件|``<Huawei>move``|
+|重命名文件|``<Huawei>rename``|
+|删除文件|``<Huawei>delete``|
+|恢复删除的文件|``<Huawei>undelete``|
+|彻底删除回收站中的文件|``<Huawei>resetrecycle-bin``|
 
 
 - VRP基于文件系统来管理设备上的文件和目录。在管理文件和目录时，经常会使用一些基本命令来查询文件或者目录的信息，常用的命令包括pwd，dir [/all]  [ filename | directory ]和more [/binary] filename [ offset ] [ all ]。
@@ -192,5 +209,51 @@ Error: Wrong parameter found at '^' position.
 	- cd directory命令用来修改用户当前的工作目录。
 	- mkdir directory命令能够创建一个新的目录。目录名称可以包含1-64个字符。
 	- rmdir directory命令能够删除文件系统中的目录，此处需要注意的是，只有空目录才能被删除。
+	- copy source-filename destination-filename命令可以复制文件。如果目标文件已存在，系统会提示此文件将被替换。目标文件名不能与系统启动文件同名，否则系统将会出现错误提示。
+	-  move source-filename destination-filename命令可以用来将文件移动到其他目录下。move命令只适用于在同一储存设备中移动文件。
+	- rename old-name new-name命令可以用来对目录或文件进行重命名。
+	- delete [ /unreserved ] [ /force ] { filename | devicename }命令可以用来删除文件。不带unreserved参数的情况下，被删除的文件将直接被移动到回收站。回收站中的文件也可以通过执行undelete命令进行恢复，但是如果执行delete命令时指定了unreserved参数，则文件将被永久删除。在删除文件时，系统会提示“是否确定删除文件”，但如果命令中指定了/force 参数，系统将不会给出任何提示信息。filename参数指的是需要删除的文件的名称，devicename参数指定了储存设备的名称。
+	- reset recycle-bin [ filename | devicename ]可以用来永久删除回收站中的文件，filename参数指定了需要永久删除的文件的名称，device-name参数指定了储存设备的名称。
 
 
+### 3.3 基本配置命令
+|        |        |     |
+|--------|---------|----------|
+|1.配置设备名称|``[Huawei] sysname name``|         |
+|2.设置系统时钟|``<Huawei> clock timezone time-zone-name { add l minus } offset``|    用来对本地时区信息进行设置。  |
+|2.设置系统时钟|``<Huawei> clock datetime [ utc ] HH:MM:S5 YYYY-MM-DD``|用来设置设备当前或UTC日期和时间。|
+|2.设置系统时钟|``<Huawei> clock dayliqht-saving-time``|  用来设置设备的夏令时|
+|3.配置命令等级|``[Huawei] command-privilege level level view view-name command-key``|用来设置指定视图内的命令的级别。命令级别分为参观、监控、配置、管理4个级别，分别对应标识0、1、2、3。|
+|4.配置用户通过Password方式登录设备|``[Huawei]user-interface vty 0 4[Huawei-ui-vty0-4]set authentication password cipher information``|用来进入指定的用户视图并配置用户认证方式为password. 系统支持的用户界面包括Console用户界面和VTY用户界面，Console界自用于本地受录，VTY界自用于远程登录。默认情况下，设备一般最多支持15个时通过VTY方式访问。|
+|5.配置用户界面参数|``[Huawei] idle-timeout minutes [ seconds ]``|用来设置用户界面断开连接的超时时间。如用户在一段时间内没有输入命令，系统将断开连接。缺省情况下，超时时间是10分钟。
+|6.配置接口IP地址|``[Huawei]interface interface-number   [Huawei-interface-mumbed address ip address``|用来给设备上的物理或逻辑接口配置IP地址。|
+|7.查看当前运行的配置文件|``<Huawei>display current-configuration``||
+|8.配置文件保存|``<Huawei>save``||
+|9.查看保存的配置|``<Huawei>display saved-configuration``| |
+|10.清除已保存的配置|``<Huawei>reset saved-configuration``||
+|11.查看系统启动配置参数|``<Huawei> display startup``|用来查看设备本次及下次启动相关的系统软件、备份系统软件、配置文件、License文件、补丁文件以及语音文件。|
+|12.配置系统下次启动时使用的配置文件|``<Huawei>startup saved-configuration configuration-fle``|设备升级时，可以通过此命令让设备下次启动时加载指定的配置文件|
+|13.配置设备重启|``<Huawei>reboot``||
+
+
+
+- 网络上一般都会部署不止一台设备，管理员需要对这些设备进行统一管理。在进行设备调试的时候，首要任务是设置设备名。设备名用来唯一地标识一台设备。AR系列路由器默认的设备名是Huawei，而S系列交换机默认的设备名是HUAWEI。设备名称一旦设置，立刻生效。
+- 为了保证与其他设备协调工作，需要准确设置系统时钟。系统时钟的=UTC（Coordinated Universal Time）+当前时区与UTC的时间差，一般设备上都会有内置的UTC和时间差配置。
+	- 可以通过clock datetime命令直接设置设备的系统时钟，格式为HH:MM:SS YYYY-MM-DD，此时UTC等于系统时钟-时间差。
+	- 也可以通过修改UTC和系统当前时区来修改系统时钟
+		- ``clock datetime [ utc ] HH:MM:SS YYYY-MM-DD``用来修改UTC时间。
+		- clock timezone time-zone-name { add | minus } offset 用来配置本地时区信息。本地时间加上或减去offset即为UTC。
+	- 有的地区实行夏令时制，因此当进入夏令时实施区间的一刻，系统时间要根据用户的设定进行夏令时时间的调整。VRP支持夏令时功能。
+- 每类用户界面都有对应的用户界面视图。用户界面（User-interface）视图是系统提供的一种命令行视图，用来配置和管理所有工作在异步交互方式下的物理接口和逻辑接口，从而达到统一管理各种用户界面的目的。在连接到设备前，用户要设置用户界面参数。系统支持的用户界面包括Console用户界面和VTY用户界面。控制口（Console Port）是一种通信串行端口，由设备的主控板提供。虚拟类型终端（Virtual Type Terminal）是一种虚拟线路端口，用户通过终端与设备建立Telnet或SSH连接后，也就建立了一条VTY，即用户可以通过VTY方式登录设备。设备一般最多支持15个用户同时通过VTY方式访问。执行user-interface maximum-vty number 命令可以配置同时登录到设备的VTY类型用户界面的最大个数。如果将最大登录用户数设为0，则任何用户都不能通过Telnet或者SSH登录到路由器。display user-interface 命令用来查看用户界面信息。
+- 不同的设备，或使用不同版本的VRP软件系统，具体可以被使用的VTY接口的最大数量可能不同。
+- 要在接口运行IP服务，必须为接口配置一个IP地址。一个接口一般只需要一个IP地址,如果接口配置了新的主IP地址，那么新的主IP地址就替代了原来的主IP地址。
+- 用户可以利用ip address ip-address { mask | mask-length } 命令为接口配置IP地址，这个命令中，mask代表子网掩码，如255.255.255.0，mask-length 代表的是掩码长度，如24。这两者任取其一均可。
+- Loopback接口是一个逻辑接口，可用来虚拟一个网络或者一个IP主机。在运行多种协议的时候，由于Loopback接口稳定可靠，所以也可以用来做管理接口。
+- 在给物理接口配置IP地址时，需要关注该接口的物理状态。默认情况下，华为路由器和交换机的接口状态为up；如果该接口曾被手动关闭，则在配置完IP地址后，应使用undo shutdown打开该接口。
+- reset saved-configuration命令用来清除配置文件或配置文件中的内容。执行该命令后，如果不使用命令startup saved-configuration重新指定设备下次启动时使用的配置文件，也不使用save命令保存当前配置，则设备下次启动时会采用缺省的配置参数进行初始化。
+- display startup命令用来查看设备本次及下次启动相关的系统软件、备份系统软件、配置文件、License文件、补丁文件以及语音文件。
+- startup saved-configuration configuration-file 命令用来指定系统下次启动时使用的配置文件，configuration-file参数为系统启动配置文件的名称。
+- reboot命令用来重启设备，重启前提示用户是否保存配置。
+
+### 3.4 使用案例
+#### 
