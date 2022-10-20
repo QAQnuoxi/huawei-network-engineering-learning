@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络工程/2.eNSP使用/VRP命令行.md",
+                "file": "网络工程/4. 网络协议/网络层.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -26,14 +26,54 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络工程/1.华为HCIA笔记/3. 华为VRP概述.md",
+                "file": "网络工程/4. 网络协议/网络层传输协议/IPv4.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3ba231a4c3749d03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络工程/1.华为HCIA笔记/2.OSI与TCPIP.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "983b2962444036f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络工程/4. 网络协议/网络层传输协议/ICMP.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "944363306a70a979",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络工程/1.华为HCIA笔记/2.OSI与TCPIP.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络工程/2.eNSP使用/VRP命令行.md",
+                "file": "网络工程/4. 网络协议/网络层传输协议/IPv4.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络工程/2.eNSP使用/VRP命令行.md",
+                "file": "网络工程/4. 网络协议/网络层传输协议/IPv4.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络工程/2.eNSP使用/VRP命令行.md"
+                "file": "网络工程/4. 网络协议/网络层传输协议/IPv4.md"
               }
             }
           }
@@ -153,17 +193,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "78a885ae9b3e0799",
+  "active": "8cd11c6f87ee6215",
   "lastOpenFiles": [
-    "网络工程/1.华为HCIA笔记/3. 华为VRP概述.md",
-    "网络工程/2.eNSP使用/VRP命令行.md",
-    "网络工程/5.数据通信/数据通信过程.md",
+    "网络工程/4. 网络协议/网络层传输协议/ICMP.md",
+    "网络工程/4. 网络协议/网络层传输协议/IPv4.md",
     "网络工程/1.华为HCIA笔记/2.OSI与TCPIP.md",
-    "网络工程/1.华为HCIA笔记/1.网络工程概述(行业介绍).md",
-    "网络工程/6. 网络类型/城域网.md",
-    "网络工程/1.华为HCIA笔记/网络三要素.md",
-    "网络工程/1.华为HCIA笔记/VLSM.md",
-    "网络工程/6. 网络类型/局域网.md",
-    "网络工程/6. 网络类型/广域网.md"
+    "网络工程/4. 网络协议/网络层.md",
+    "网络工程/4. 网络协议/网络层传输协议/IPv6.md",
+    "网络工程/5.数据通信/数据通信过程.md",
+    "网络工程/1.华为HCIA笔记/3. 华为VRP概述.md",
+    "网络工程/5.数据通信/未命名.md",
+    "网络工程/4. 网络协议/网络层传输协议/^用于标识一个网络.md",
+    "网络工程/1.华为HCIA笔记/1.网络工程概述(行业介绍).md"
   ]
 }

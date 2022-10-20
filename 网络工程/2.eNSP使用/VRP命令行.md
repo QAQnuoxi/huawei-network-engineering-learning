@@ -256,4 +256,130 @@ Error: Wrong parameter found at '^' position.
 - reboot命令用来重启设备，重启前提示用户是否保存配置。
 
 ### 3.4 使用案例
-#### 
+1. 文件查询命令、目录操作
+- 需求：
+	- 查看路由器RTA当前目录下的文件和目录的信息;
+	- 创建一个新目录test，然后删除该目录。
+
+```
+<Huawei>pwd
+flash:
+<Huawei>dir
+Directory of flash:/
+
+  Idx  Attr     Size(Byte)  Date        Time(LMT)  FileName 
+    0  drw-              -  Oct 20 2022 06:55:35   dhcp
+    1  -rw-        121,802  May 26 2014 09:20:58   portalpage.zip
+    2  -rw-          2,263  Oct 20 2022 06:55:31   statemach.efs
+    3  -rw-        828,482  May 26 2014 09:20:58   sslvpn.zip
+
+1,090,732 KB total (784,464 KB free)
+<Huawei>mkdir test
+Info: Create directory flash:/test......Done
+<Huawei>dir
+Directory of flash:/
+
+  Idx  Attr     Size(Byte)  Date        Time(LMT)  FileName 
+    0  drw-              -  Oct 20 2022 06:56:14   test
+    1  drw-              -  Oct 20 2022 06:55:35   dhcp
+    2  -rw-        121,802  May 26 2014 09:20:58   portalpage.zip
+    3  -rw-          2,263  Oct 20 2022 06:55:31   statemach.efs
+    4  -rw-        828,482  May 26 2014 09:20:58   sslvpn.zip
+
+1,090,732 KB total (784,460 KB free)
+<Huawei>rmdir test
+Remove directory flash:/test? (y/n)[n]:y
+%Removing directory flash:/test...Done!
+<Huawei>dir
+Directory of flash:/
+
+  Idx  Attr     Size(Byte)  Date        Time(LMT)  FileName 
+    0  drw-              -  Oct 20 2022 06:55:35   dhcp
+    1  -rw-        121,802  May 26 2014 09:20:58   portalpage.zip
+    2  -rw-          2,263  Oct 20 2022 06:55:31   statemach.efs
+    3  -rw-        828,482  May 26 2014 09:20:58   sslvpn.zip
+
+1,090,732 KB total (784,464 KB free)
+<Huawei>
+```
+
+-----
+
+2. 文件操作(一)
+- 需求说明:
+	- 将文件huawei.txt重命名为save.zip；
+	- 将文件save.zip复制并命名为file.txt；
+	- 将文件file.txt移动到dhcp目录下;
+	- 删除文件file.txt；
+	- 恢复删除文件file.txt。
+- ![[Pasted image 20221020152619.png]]
+- ![[Pasted image 20221020152927.png]]
+-------
+
+3. VRP基本配置命令
+![[Pasted image 20221020153111.png]]
+如图，某工程师需要为公司配置路由器，需求如下:
+- 路由器与PC互通，地址规划如图;
+- 公司其他人员可以通过PC远程登录访问路由器，密码是huawei123，但是只能查看配置不能随意修改配置命令;
+- 将当前配置保存为huawei.zip文件，并配置系统下次启动时使用该配置文件。
+
+
+
+> 配置接口地址
+```
+<Huawei>system-view
+Enter system view, return user view with Ctrl+Z.
+[Huawei]sysname AR1
+[AR1]interface GigabitEthernet 0/0/1
+[AR1-GigabitEthernet0/0/1]ip address 192.168.1.1 24
+[AR1-GigabitEthernet0/0/1]quit
+
+```
+
+>配置用户权限和用户认证
+
+```
+[AR1]user-interface vty 0 4
+[AR1-ui-vty0-4]authentication-mode password
+Please configure the login password (maximum length 16):huawei123
+[AR1-ui-vty0-4]user privilege level 1
+[AR1-ui-vty0-4]quit
+[AR1]
+
+```
+附：
+- 部分型号设备配置密码时只需要输入” authentication-mode password “命令，便会自动跳出输入密码的页面，将密码输入即可；
+-  有的设备密码设置命令为” set authentication-mode password 密码”，密码需要手动输入。
+
+
+>配置系统下次启动文件
+
+![[Pasted image 20221020155202.png]]
+
+- 设备中直接使用命令”save”进行保存，默认保存在vrpcfg.cfg文件中，当然也可以更改保存文件名,VRP5操作系统默认文件放置在flash:目录下
+
+> 查看配置结果
+
+![[Pasted image 20221020155316.png]]
+
+
+- display startup命令用来查看设备本次及下次启动相关的系统软件、备份系统软件、配置文件、License文件、补丁文件以及语音文件。
+- Startup system software表示的是本次系统启动所使用的VRP文件。
+- Next startup system software表示的是下次系统启动所使用的VRP文件。
+- Startup saved-configuration file表示的是本次系统启动所使用的配置文件。
+- Next startup saved-configuration file表示的是下次系统启动所使用的配置文件。
+- 设备启动时，会从存储设备中加载配置文件并进行初始化。如果存储设备中没有配置文件，设备将会使用默认参数进行初始化。
+- startup saved-configuration [configuration-file] 命令用来指定系统下次启动时使用的配置文件，configuration-file参数为系统启动配置文件的名称
+
+### 3.5 附
+
+![[Pasted image 20221020155513.png]]
+
+ >思考：
+1. 华为数通设备目前使用的VRP版本是多少？
+2. 华为网络设备支持多少个用户同时使用Console口登录?
+3. 如果设备中有多个配置文件，如何指定下次启动时使用的配置文件?
+
+1. 目前，大多数华为数通产品使用的是VRP5版本，少数产品如NE系列路由器使用的是VRP8版本。
+2. 华为网络设备同时只能有一个用户登录Console界面，因此Console用户的编号固定为0。
+3. 需要指定某一配置文件为下次启动时使用的配置文件，可以执行startup saved-configuration configuration-file 命令，这里的配置文件名包括文件名称和扩展名。
