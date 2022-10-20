@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fb8ec44f17c724ed",
+        "id": "1c2531b24830c596",
         "type": "tabs",
         "children": [
           {
-            "id": "a8c8d561b0cb7bb2",
+            "id": "4beca4b6edbf8aff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md",
+                "file": "网络工程/5.数据通信/数据通信过程.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,25 @@
             }
           },
           {
-            "id": "a51c0d7249cc6475",
+            "id": "78a885ae9b3e0799",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络工程/3.硬件指南/Switch    (交换机).md",
+                "file": "网络工程/1.华为HCIA笔记/3. 华为VRP.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f62a24a28b406d4c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络工程/1.华为HCIA笔记/1.网络工程概述(行业介绍).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,8 +113,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络工程/3.硬件指南/Switch    (交换机).md",
-                "collapseAll": false,
+                "file": "网络工程/1.华为HCIA笔记/3. 华为VRP.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络工程/3.硬件指南/Switch    (交换机).md",
+                "file": "网络工程/1.华为HCIA笔记/3. 华为VRP.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +143,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -140,31 +153,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络工程/3.硬件指南/Switch    (交换机).md"
+                "file": "网络工程/1.华为HCIA笔记/3. 华为VRP.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "a51c0d7249cc6475",
+  "active": "78a885ae9b3e0799",
   "lastOpenFiles": [
-    "网络工程/1.华为IA笔记/1.网络工程概述(行业介绍).md",
-    "网络工程/1.华为IA笔记/images/Pasted image 20221019143923.png",
-    "网络工程/3.硬件指南/Switch    (交换机).md",
-    "网络工程/3.硬件指南/Router （路由）.md",
-    "网络工程/1.华为IA笔记/数据链路层.md",
-    "网络工程/1.华为IA笔记/网络三要素.md",
-    "网络工程/1.华为IA笔记/OSI与TCPIP.md",
-    "清单/近期补充学习清单.md",
-    "清单/images/uTools_1665285965061.png",
-    "网络工程/2.eNSP使用/wireshark设置中文.md"
+    "网络工程/1.华为HCIA笔记/网络三要素.md",
+    "网络工程/1.华为HCIA笔记/VLSM.md",
+    "网络工程/1.华为HCIA笔记/3. 华为VRP.md",
+    "网络工程/5.数据通信/数据通信过程.md",
+    "网络工程/1.华为HCIA笔记/1.网络工程概述(行业介绍).md",
+    "网络工程/1.华为HCIA笔记/2.OSI与TCPIP.md",
+    "网络工程/6. 网络类型/城域网.md",
+    "网络工程/6. 网络类型/局域网.md",
+    "网络工程/6. 网络类型/广域网.md",
+    "网络工程/3.硬件指南/线缆.md"
   ]
 }
