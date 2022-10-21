@@ -186,4 +186,46 @@
 
 
 
-# 
+# IPv4的基础配置命令
+
+1. 进入接口视图
+	1. `` [Huawei] interface interface-type interface-number ``
+	2. 通过此命令可以进入指定的接口视图，配置接口的相关属性。
+	- *interface-type interface-number*：指定接口类型和接口编号。接口类型和接口编号之间可以输入空格也可以不输入空格。
+2. 配置接口的IP地址
+	1. `` [Huawei-GigabitEthernet0/0/1] ip address ip-address { mask | mask-length} ``
+	2. 在接口视图下，通过此命令来给网络设备上的接口配置IP地址，实现网的互连。
+	- ip-address:指定接口的IP地址，点分十进制形式。
+	- mask: 指定子网掩码，点分十进制形式。
+	- mask-length: 指定掩码长度，整数形式，取值范围是0～32。
+
+### 案例： 配置接口IP地址
+
+![[Pasted image 20221021105820.png]]
+- 在上述两台路由器互的网络中，配置设备的互联物理接口地址以及各自的逻辑地址。
+
+1. 配置物理接口地址
+```
+[RTA] interface gigabitethermet 0/0/1
+[RTA-GigabitEthernet0/0/1] ip address 192.168.1.1255.255.255.0
+或
+[RTA-GigabitEthernet0/0/1] ip address 192.168.1.124
+
+```
+
+2. 配置逻辑接口地址
+```
+[RTA] interface LoopBack o
+[RTA-LoopBack0] ip address 1.1.1.1 255.255.255.255
+或
+[RTA-LoopBack0]ip address 1.1.1.1 32
+```
+
+- 物理接口：物理接口是指网络设备上实际存在的接口，分为负责承担业务传输的业务接口和负责管理设备的管理接口，例如GE业务接口和MEth管理接口。
+- 逻辑接口：逻辑接口是指能够实现数据交换功能但物理上不存在、需要通过配置建立的接口，需要承担业务传输，例如VLANIF接口、Loopback接口。
+- Loopback接口：用户需要一个接口状态永远是Up的接口的IP地址时，可以选择Loopback接口的IP地址。
+- Loopback接口一旦被创建，其物理状态和链路协议状态永远是Up，即使该接口上没有配置IP地址。
+- Loopback接口配置IP地址后，就可以对外发布。Loopback接口上可以配置32位掩码的IP地址，达到节省地址空间的目的。
+- Loopback接口不能封装任何链路层协议，数据链路层也就不存在协商问题，其协议状态永远都是Up。
+- 对于目的地址不是本地IP地址，出接口是本地Loopback接口的报文，设备会将其直接丢弃。
+
