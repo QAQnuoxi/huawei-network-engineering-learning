@@ -5,5 +5,12 @@
   "tabSize": 4,
   "alwaysUpdateLinks": true,
   "strictLineBreaks": true,
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "useMarkdownLinks": true,
+  "defaultViewMode": "source",
+  "spellcheckLanguages": [
+    "zh-CN",
+    "en-US"
+  ],
+  "vimMode": false
 }

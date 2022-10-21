@@ -14,5 +14,13 @@
       ],
       "key": "Delete"
     }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Insert"
+    }
   ]
 }

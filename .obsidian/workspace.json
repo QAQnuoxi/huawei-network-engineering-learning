@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "78a885ae9b3e0799",
+            "id": "eff012b9f8ffa0ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络工程/4. 网络协议/网络层.md",
+                "file": "网络工程/3.硬件指南/Router （路由器）.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -46,8 +46,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络工程/4. 网络协议/网络层传输协议/IPv4.md",
+                "file": "网络工程/3.硬件指南/Router （路由器）.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络工程/4. 网络协议/网络层传输协议/IPv4.md",
+                "file": "网络工程/3.硬件指南/Router （路由器）.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络工程/4. 网络协议/网络层传输协议/IPv4.md"
+                "file": "网络工程/3.硬件指南/Router （路由器）.md"
               }
             }
           }
@@ -167,17 +166,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "8cd11c6f87ee6215",
+  "active": "eff012b9f8ffa0ca",
   "lastOpenFiles": [
-    "网络工程/1.华为HCIA笔记/2.OSI与TCPIP.md",
-    "网络工程/4. 网络协议/网络层传输协议/ICMP.md",
-    "网络工程/2.eNSP使用/VRP命令行.md",
-    "网络工程/4. 网络协议/网络层传输协议/IPv4.md",
-    "网络工程/4. 网络协议/网络层.md",
-    "网络工程/4. 网络协议/网络层传输协议/IPv6.md",
-    "网络工程/5.数据通信/数据通信过程.md",
-    "网络工程/1.华为HCIA笔记/3. 华为VRP概述.md",
-    "网络工程/5.数据通信/未命名.md",
-    "网络工程/4. 网络协议/网络层传输协议/^用于标识一个网络.md"
+    "mould/3x3表格.md",
+    "网络工程/3.硬件指南/Router （路由器）.md",
+    "网络工程/3.硬件指南/images/Pasted image 20221019192952.png",
+    "网络工程/3.硬件指南/images/Pasted image 20221019162727.png",
+    "网络工程/3.硬件指南/images/Pasted image 20221019162133.png",
+    "网络工程/3.硬件指南/images/Pasted image 20221019161848.png",
+    "网络工程/3.硬件指南/images/Pasted image 20221019160511.png",
+    "mould/日期.md",
+    "mould/时间.md",
+    "网络工程/4. 网络协议/网络层传输协议/IPv4.md"
   ]
 }
