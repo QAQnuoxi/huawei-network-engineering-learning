@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1c2531b24830c596",
+        "id": "b48fe0aae2d98fb1",
         "type": "tabs",
         "children": [
           {
-            "id": "fe8aebdf792b9099",
+            "id": "d166a7b4238130e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络工程/6. 网络类型/城域网.md",
+                "file": "网络工程/3.硬件指南/Router （路由器）.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络工程/6. 网络类型/城域网.md",
+                "file": "网络工程/3.硬件指南/Router （路由器）.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络工程/6. 网络类型/城域网.md",
+                "file": "网络工程/3.硬件指南/Router （路由器）.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络工程/6. 网络类型/城域网.md"
+                "file": "网络工程/3.硬件指南/Router （路由器）.md"
               }
             }
           }
@@ -140,17 +140,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "fe8aebdf792b9099",
+  "active": "d166a7b4238130e9",
   "lastOpenFiles": [
+    "网络工程/3.硬件指南/images/Pasted image 20221023113900.png",
+    "网络工程/3.硬件指南/images/Pasted image 20221019192952.png",
+    "网络工程/3.硬件指南/Router （路由器）.md",
+    "网络工程/6. 网络类型/城域网.md",
     "网络工程/6. 网络类型/局域网.md",
     "网络工程/6. 网络类型/广域网.md",
     "网络工程/6. 网络类型/未命名.md",
-    "网络工程/6. 网络类型/城域网.md",
     "Pasted image 20221021163919.png",
     "test.md",
-    "打算发.md",
-    "未命名 1.md",
-    "未命名 2.md",
-    "keyboard-shortcuts-windows.pdf"
+    "打算发.md"
   ]
 }
